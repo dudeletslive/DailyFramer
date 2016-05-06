@@ -1,6 +1,6 @@
 //- Custom Configuration
 block config
-  //- Setup site's base URL to match the "baseUrl" key within `package.json`
+  //- Setup site's base URL to match the 'baseUrl' key within `package.json`
   //- Otherwise default to relative pathing
   - var baseUrl = config.baseUrl || './'
 
@@ -17,12 +17,18 @@ head
   meta(charset='utf-8')
   meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
   title DailyFramer
-  meta(name='description', content= 'A new Yeogurt application')
   meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  //- Share Meta
+  meta(name='description', content= 'A 30 Day email resource to help you build proficiency with Framer and a portfolio of interaction design work to show off your skills!')
+  meta(property='og:image', content='https://davidwalsh.name/wp-content/themes/klass/img/facebooklogo.png')
+  meta(property="og:title", content="DailyFramer")
+  meta(property="og:url", content="www.dailyframer.com")
+  meta(property="og:site_name", content="DailyFramer")
+
   block stylesheets
     link(rel='stylesheet', href= baseUrl + 'styles/main.css')
   block scripts
-    script(src="https://use.typekit.net/udp8dbb.js")
+    script(src='https://use.typekit.net/udp8dbb.js')
     script.
       try{Typekit.load({ async: true });}catch(e){}
 
@@ -37,11 +43,11 @@ body
 
   footer: .container
     p Designed and built by 
-      a(href="http://www.jonbell.co", target="_blank", title="Jon Bell") Jon Bell
+      a(href='http://www.jonbell.co', target='_blank', title='Jon Bell') Jon Bell
       |  and 
-      a(href="http://www.danielprice.co", target="_blank", title="Dan Price") Dan Price
+      a(href='http://www.danielprice.co', target='_blank', title='Dan Price') Dan Price
     p Inspired By 
-      a(href="http://www.dailyui.co", target="_blank", title="DailyUI") DailyUI
+      a(href='http://www.dailyui.co', target='_blank', title='DailyUI') DailyUI
     p: small &copy; 2016 DailyFramer - All Rights Reserved
 
   script(src= baseUrl + 'scripts/main.js')
