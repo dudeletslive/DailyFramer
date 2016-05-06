@@ -1,0 +1,28 @@
+extends _layouts/base
+
+block content
+  .container
+    h2 Be proficient with Framer in 30 days!
+      p We’ve created a 30 day email resource to help you build proficiency with Framer<br>and a portfolio of interaction design work to show off your skills! 
+    //- MailChimp form
+    .mailchimp#mc_embed_signup
+      #mce-responses.clear
+        #mce-error-response.response(style='display:none')
+        #mce-success-response.response(style='display:none')
+      form#mc-embedded-subscribe-form(action='//dailyframer.us13.list-manage.com/subscribe/post?u=4f5c9f18e06867ae637504f2a&id=287e2df71e', method='post', name='mc-embedded-subscribe-form', target='_blank', novalidate='')
+        #mc_embed_signup_scroll
+          input#mce-EMAIL.required.email(type='email', value='', name='EMAIL', placeholder="Email address...")
+          div(style='position: absolute; left: -5000px;', aria-hidden='true')
+            input(type='text', name='b_4f5c9f18e06867ae637504f2a_287e2df71e', tabindex='-1', value='')
+          input#mc-embedded-subscribe(type='submit', value='GET STARTED', name='subscribe')
+    //- Features
+    .feature-row.group
+      .feature-row_item
+        .img: img(src="/images/f_1.png")
+        p Daily Design Prompts
+      .feature-row_item
+        .img: img(src="/images/f_2.png")
+        p Weekly Inspiration
+      .feature-row_item
+        .img: img(src="/images/f_3.png")
+        p Free Resources

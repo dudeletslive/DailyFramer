@@ -1,0 +1,12 @@
+{
+  "generator-yeogurt": {
+    "config": {
+      "projectName": "DailyFramer",
+      "htmlOption": "jade",
+      "jsPreprocessor": "none",
+      "cssOption": "stylus",
+      "testFramework": "none"
+    },
+    "version": "1.5.2"
+  }
+}
